@@ -25,4 +25,10 @@ export class UsersPage {
     console.log('ionViewDidLoad UsersPage');
   }
 
+  ionViewCanEnter(): boolean | Promise<boolean> {
+    console.log('ionViewCanEnter');
+    const rnd = Math.random();
+    return rnd > 0.5;
+  }
+
 }

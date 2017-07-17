@@ -1,0 +1,26 @@
+<!--
+  Generated template for the BuyoutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>the Buyout - {{ productData.name }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h2>Your Order</h2>
+  <p>Name: {{ productData.name }}</p>
+  <p>Quantity: {{ productData.quantity }}</p>
+  <p>Click to buy {{ productData.name }}</p>
+
+  
+  <button ion-button (click)="onGoBack()">Back</button>
+  <hr>
+  <button ion-button (click)="onGoRoot()">Home</button>
+</ion-content>
