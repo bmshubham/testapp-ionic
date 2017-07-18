@@ -25,10 +25,43 @@ export class UsersPage {
     console.log('ionViewDidLoad UsersPage');
   }
 
-  ionViewCanEnter(): boolean | Promise<boolean> {
+  ionViewCanEnter(): boolean | Promise<void> {
     console.log('ionViewCanEnter');
     const rnd = Math.random();
     return rnd > 0.5;
   }
+
+  ionViewWillEnter() {
+    console.log('ionViewWillEnter');
+  }
+
+  ionViewDidEnter() {
+    console.log('ionViewDidEnter');
+  }
+
+  // ionViewCanLeave(): boolean | Promise<void> {
+  //   console.log('ionViewCanLeave');
+  //   let promise = new Promise((resolve, reject) => 
+  //   {
+  //     setTimeout(() =>
+  //     {
+  //       resolve();
+  //     }, 1000);
+  //   });  
+  //   return promise;
+  // }
+
+  ionViewWillLeave() {
+    console.log('ionViewWillLeave');
+  }
+
+  ionViewDidLeave() {
+    console.log('ionViewDidLeave');
+  }
+
+  ionViewWillUnload() {
+    console.log('ionViewWillUnload');
+  }
+
 
 }
